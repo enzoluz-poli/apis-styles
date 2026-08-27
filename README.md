@@ -1,88 +1,288 @@
-# C Learning
+# 🚀 APIs Styles
 
-Repositório destinado ao estudo e prática da linguagem **C**, reunindo exercícios, projetos e anotações desenvolvidos ao longo do aprendizado.
+Repositório dedicado ao estudo e à prática de **APIs (Application Programming Interfaces)**, com foco em entender desde os fundamentos do protocolo HTTP até o desenvolvimento, consumo, autenticação, testes e documentação de APIs REST.
 
-## 📚 Conteúdos
-
-Os estudos estão organizados de forma progressiva, acompanhando os principais fundamentos da linguagem:
-
-- Sintaxe básica
-- Variáveis e tipos de dados
-- Operadores
-- Estruturas condicionais
-- Estruturas de repetição
-- Funções
-- Arrays e strings
-- Ponteiros
-- Structs
-- Alocação dinâmica de memória
-- Manipulação de arquivos
-- Recursão
-- Estruturas de dados
-- Projetos práticos
-
-## 📁 Estrutura
-
-```text
-c-learning/
-├── README.md
-├── exercises/
-│   ├── 01-basics/
-│   ├── 02-conditionals/
-│   ├── 03-loops/
-│   ├── 04-functions/
-│   ├── 05-arrays-strings/
-│   ├── 06-pointers/
-│   ├── 07-structs/
-│   ├── 08-memory/
-│   └── ...
-├── projects/
-└── notes/
-```
-
-## 🛠️ Compilação
-
-Os programas podem ser compilados utilizando o **GCC**:
-
-```bash
-gcc main.c -o main
-```
-
-Para executar:
-
-```bash
-./main
-```
-
-Durante os estudos, também podem ser utilizados warnings para facilitar a identificação de problemas:
-
-```bash
-gcc -Wall -Wextra -pedantic main.c -o main
-```
-
-## 🎯 Objetivos
-
-- Desenvolver uma base sólida em programação utilizando C;
-- Compreender gerenciamento de memória e ponteiros;
-- Desenvolver raciocínio lógico e resolução de problemas;
-- Implementar algoritmos e estruturas de dados;
-- Criar uma base para estudos posteriores em programação de baixo nível, sistemas e engenharia.
-
-## 📈 Progresso
-
-- [ ] Fundamentos da linguagem
-- [ ] Condicionais
-- [ ] Loops
-- [ ] Funções
-- [ ] Arrays e strings
-- [ ] Ponteiros
-- [ ] Structs
-- [ ] Alocação dinâmica
-- [ ] Arquivos
-- [ ] Recursão
-- [ ] Estruturas de dados
-- [ ] Projetos
+A ideia é combinar **teoria + exercícios + projetos práticos**, construindo uma base sólida para desenvolvimento Backend.
 
 ---
 
-**C Learning** — estudos, exercícios e projetos em C.
+## 🎯 Objetivos
+
+- Entender o que são APIs e como elas funcionam
+- Dominar os fundamentos do protocolo HTTP
+- Aprender a consumir APIs externas
+- Entender o conceito de API REST
+- Criar APIs do zero
+- Trabalhar com JSON
+- Implementar CRUD
+- Integrar APIs com bancos de dados
+- Implementar autenticação e autorização
+- Aprender a testar APIs
+- Documentar APIs
+- Desenvolver projetos completos
+
+---
+
+## 🧠 Roadmap de Estudos
+
+### 1. Fundamentos
+
+- [ ] O que é uma API?
+- [ ] Client x Server
+- [ ] Request x Response
+- [ ] Protocolo HTTP
+- [ ] Métodos HTTP
+  - [ ] `GET`
+  - [ ] `POST`
+  - [ ] `PUT`
+  - [ ] `PATCH`
+  - [ ] `DELETE`
+- [ ] Status Codes
+  - [ ] `2xx`
+  - [ ] `3xx`
+  - [ ] `4xx`
+  - [ ] `5xx`
+- [ ] Headers
+- [ ] Body
+- [ ] Query Parameters
+- [ ] Path Parameters
+- [ ] Cookies
+
+---
+
+### 2. JSON
+
+- [ ] Estrutura JSON
+- [ ] Objetos
+- [ ] Arrays
+- [ ] Tipos de dados
+- [ ] Serialização
+- [ ] Desserialização
+- [ ] JSON em requests
+- [ ] JSON em responses
+
+---
+
+### 3. REST APIs
+
+- [ ] O que é REST?
+- [ ] Recursos
+- [ ] Endpoints
+- [ ] REST x RESTful
+- [ ] Stateless
+- [ ] CRUD
+- [ ] Boas práticas para endpoints
+- [ ] Versionamento de APIs
+- [ ] Paginação
+- [ ] Filtros
+- [ ] Ordenação
+
+Exemplo:
+
+```text
+GET    /users
+GET    /users/10
+POST   /users
+PUT    /users/10
+PATCH  /users/10
+DELETE /users/10
+```
+
+---
+
+### 4. Consumindo APIs
+
+- [ ] Fazer requests HTTP
+- [ ] Utilizar `curl`
+- [ ] Utilizar Postman
+- [ ] Utilizar APIs públicas
+- [ ] Interpretar responses
+- [ ] Enviar headers
+- [ ] Enviar parâmetros
+- [ ] Enviar JSON
+- [ ] Tratar erros
+
+Exemplo:
+
+```bash
+curl https://api.example.com/users
+```
+
+---
+
+### 5. Desenvolvimento de APIs
+
+Foco principal: **Golang**
+
+- [ ] Criar servidor HTTP
+- [ ] Criar rotas
+- [ ] Criar handlers
+- [ ] Receber requests
+- [ ] Retornar responses
+- [ ] Trabalhar com JSON
+- [ ] Middleware
+- [ ] Tratamento de erros
+- [ ] Validação de dados
+- [ ] Organização de projetos
+
+---
+
+### 6. Banco de Dados
+
+- [ ] Conectar API a um banco
+- [ ] PostgreSQL
+- [ ] CRUD com banco de dados
+- [ ] Queries
+- [ ] Transactions
+- [ ] Migrations
+- [ ] Relacionamentos
+- [ ] ORM / Query Builders
+
+---
+
+### 7. Autenticação e Segurança
+
+- [ ] Authentication x Authorization
+- [ ] Sessions
+- [ ] Cookies
+- [ ] JWT
+- [ ] Access Token
+- [ ] Refresh Token
+- [ ] Hash de senhas
+- [ ] CORS
+- [ ] Rate Limiting
+- [ ] HTTPS
+- [ ] Variáveis de ambiente
+- [ ] Boas práticas de segurança
+
+---
+
+### 8. Testes
+
+- [ ] Testes unitários
+- [ ] Testes de integração
+- [ ] Testes de endpoints
+- [ ] Testes de erros
+- [ ] Mocking
+- [ ] Testes automatizados
+
+---
+
+### 9. Documentação
+
+- [ ] Documentar endpoints
+- [ ] Request examples
+- [ ] Response examples
+- [ ] OpenAPI
+- [ ] Swagger
+- [ ] Gerar documentação automaticamente
+
+---
+
+### 10. Projeto Final
+
+Construir uma API completa aplicando os conceitos estudados.
+
+**Exemplo: API de gerenciamento de tarefas**
+
+Funcionalidades:
+
+- [ ] Cadastro de usuários
+- [ ] Login
+- [ ] Autenticação
+- [ ] CRUD de tarefas
+- [ ] Filtros
+- [ ] Paginação
+- [ ] PostgreSQL
+- [ ] Validação
+- [ ] Tratamento de erros
+- [ ] Testes
+- [ ] Documentação
+- [ ] Docker
+
+---
+
+## 📂 Estrutura do Repositório
+
+```text
+api-learning/
+│
+├── README.md
+│
+├── notes/
+│   ├── http.md
+│   ├── rest.md
+│   ├── json.md
+│   ├── authentication.md
+│   └── security.md
+│
+├── exercises/
+│   ├── 01-http/
+│   ├── 02-json/
+│   ├── 03-rest/
+│   ├── 04-consuming-apis/
+│   ├── 05-building-apis/
+│   ├── 06-authentication/
+│   └── 07-testing/
+│
+├── projects/
+│   ├── 01-first-api/
+│   ├── 02-crud-api/
+│   └── 03-final-project/
+│
+└── api/
+    └── ...
+```
+
+---
+
+## 🛠️ Ferramentas
+
+| Ferramenta        | Utilização              |
+| ----------------- | ----------------------- |
+| Go                | Desenvolvimento Backend |
+| HTTP              | Comunicação             |
+| JSON              | Formato de dados        |
+| PostgreSQL        | Banco de dados          |
+| Postman           | Testes e requisições    |
+| cURL              | Requisições HTTP        |
+| Swagger / OpenAPI | Documentação            |
+| Docker            | Containerização         |
+| Git               | Versionamento           |
+
+---
+
+## 📚 Metodologia
+
+Cada tópico será estudado seguindo o ciclo:
+
+```text
+Teoria
+  ↓
+Exemplo
+  ↓
+Exercício
+  ↓
+Implementação
+  ↓
+Projeto
+```
+
+O objetivo não é apenas memorizar conceitos, mas **entender como uma API funciona internamente e conseguir construir uma do zero**.
+
+---
+
+## 📈 Progresso
+
+| Etapa                   | Status |
+| ----------------------- | ------ |
+| HTTP                    | ⬜      |
+| JSON                    | ⬜      |
+| REST                    | ⬜      |
+| Consumo de APIs         | ⬜      |
+| Desenvolvimento de APIs | ⬜      |
+| Banco de Dados          | ⬜      |
+| Autenticação            | ⬜      |
+| Segurança               | ⬜      |
+| Testes                  | ⬜      |
+| Documentação
